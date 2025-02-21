@@ -1,4 +1,27 @@
 #include <stdio.h>
+    
+int main(){
+    printf("desafio super trunfo!\n");
+    char estadoA[50] = "ceara";
+    char carta[3] = "a01";
+    char cidade[15] = "fortaleza";
+    int populacao = 1000000;
+    double area = 10000.000;
+    double pib = 30000.00;
+    int pontos = 30; 
+    
+    printf("digite o codigo da carta: \n");
+    scanf("%s", carta);
+    printf("populacao: %d - area: %f - pib: %f - pontos: %d\n", populacao, area, pib, pontos);
+    
+    
+    
+
+
+
+
+
+
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -6,7 +29,6 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
@@ -18,5 +40,6 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    
+
 }
