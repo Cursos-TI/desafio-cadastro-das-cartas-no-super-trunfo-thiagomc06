@@ -1,18 +1,51 @@
 #include <stdio.h>
     
 int main(){
-    printf("desafio super trunfo!\n");
-    char estadoA[50] = "ceara";
-    char carta[3] = "a01";
-    char cidade[15] = "fortaleza";
-    int populacao = 1000000;
-    double area = 10000.000;
-    double pib = 30000.00;
-    int pontos = 30; 
+
+    printf("Carta 1 \n");
+    char Estado[15];
+    char codigo_da_carta[3];
+    char cidade[15];
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+
+    printf("Digite o nome do estado: \n");
+    scanf("%s", Estado);
     
-    printf("digite o codigo da carta: \n");
-    scanf("%s", carta);
-    printf("populacao: %d - area: %f - pib: %f - pontos: %d\n", populacao, area, pib, pontos);
+    printf("Digite o código da carta: \n");
+    scanf(" %s", codigo_da_carta);
+    
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", cidade);
+    
+    printf("Digite o tamanho da população: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite o tamanho da área em km2: \n");
+    scanf("%f", &area);
+
+    printf("Digite o valor do PIB: \n");
+    scanf("%f", &pib);
+
+    printf("Digite a quantidade de pontos turísticos: \n");
+    scanf("%d", &pontos_turisticos);
+
+    //exibe as informações coletadas
+
+    printf("Informações da Carta 1: \n");
+    printf("Estado: %s \n", Estado);
+    printf("Código da carta: %s \n", codigo_da_carta);
+    printf("Cidade: %s \n", cidade);
+    printf("População: %d \n", &populacao);
+    printf("Area em km2: %f \n", &area);
+    printf("PIB: %f \n", &pib);
+    printf("Pontos turísticos: %d \n", &pontos_turisticos);
+
+    
+}
+    
     
     
     
@@ -42,4 +75,3 @@ int main(){
 
     
 
-}
