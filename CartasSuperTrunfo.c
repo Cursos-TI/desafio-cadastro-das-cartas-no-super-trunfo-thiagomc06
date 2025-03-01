@@ -96,17 +96,22 @@ printf("pib per capita: %.3f reais\n", pib_per_capita2);
 super_poder2 = (float) populacao2 + area2 + pib2 + ponto_turistico2 + (1 / densidade_populacional2) + pib_per_capita2;
 printf("o super poder da carta 2 tem o valor de: %.2f\n", super_poder2);
 
-// comparação das cartas
-printf("Comparação dos atributo das Cartas\n");
+//comparação e resultado da comparação
+printf("Comparação das cartas (Atributo: PIB per Capita)\n");
 
-printf("a população da carta1 (%lu) é maior que a população da carta 2 (%lu): %d\n", populacao1, populacao2, populacao1 > populacao2);
-printf("a área da carta1 (%.2f) é maior que a área da carta 2 (%.2f): %d\n", area1, area2, area1 > area2);
-printf("o pib da carta1 (%.2f) é maior que o pib da carta 2 (%.2f): %d\n", pib1, pib2, pib1 > pib2);
-printf("a quantidade de pontos turísticos da carta1 (%d) é maior que a quantidade de pontos turísticos da carta 2 (%d): %d\n", ponto_turistico1, ponto_turistico2, ponto_turistico1 > ponto_turistico2);
-printf("a densidade populacional da carta1 (%.2f) é menor que a densidade populacional da carta 2 (%.2f): %d\n", densidade_populacional1, densidade_populacional2, densidade_populacional1 < densidade_populacional2);
-printf("o pib per capita da carta1 (%.3f) é maior que o pib per capita da carta 2 (%.3f): %d\n", pib_per_capita1, pib_per_capita2, pib_per_capita1 > pib_per_capita2);
-printf("o super poder da carta1 (%.2f) é maior que o super poder da carta 2 (%.2f): %d\n", super_poder1, super_poder2, super_poder1 > super_poder2);
+printf("Carta 1 %s: %.3f reais\n", cidade1, pib_per_capita1);
+printf("Carta 2 %s: %.3f reais\n", cidade2, pib_per_capita2);
 
+if(pib_per_capita1 > pib_per_capita2){
+    printf("O PIB per capita da carta 1 é maior\n");
+}else {
+    printf("O PIB per capita da carta 2 é maior\n");
+}
+if(pib_per_capita1 > pib_per_capita2){
+    printf("Carta 1, %s venceu!\n", cidade1);
+}else {
+    printf("Carta 2, %s venceu!\n", cidade2);
+}
 
 return 0;
 
